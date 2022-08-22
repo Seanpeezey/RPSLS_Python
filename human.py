@@ -33,3 +33,4 @@ class Human(Player):
         else:
             print('not a valid option try again')
         
+        

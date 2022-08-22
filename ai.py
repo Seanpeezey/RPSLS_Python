@@ -10,7 +10,6 @@ class Ai(Player):
         print(f'C3PO chose {self.chosen_gesture}')
         return self.chosen_gesture
         
-        
-
     def player_name(self):
-       self.name = 'C3PO'
+       self.name = 'Mr.Roboto'
+       

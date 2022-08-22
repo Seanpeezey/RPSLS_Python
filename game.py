@@ -10,7 +10,6 @@ class Game():
         pass
 
     def welcome(self):
-        sleep(1)
         print('Welcome to a wonderful game of chance!')
         print('Each player picks a gesture and reveals it at the same time. The winner is the one who gets 2 wins. In a tie, the process is repeated until a winner is found.')
         sleep(5)
@@ -34,14 +33,13 @@ class Game():
         sleep(2)
         print('Paper disproves Spock')
         sleep(2)
-        print('Spock vaporizes Rock')
+        print('& Spock vaporizes Rock')
         sleep(3)
+        print(" ")
         print('Now that you know the rules, lets get started!')
-    #greeting_message = welcome()
-
-    # def display_gesture_options(self): 
-    #     print(self.gesture)
-    # display_gesture = display_gesture_options()
+        print(" ")
+        sleep(1)
+#Greetings for the game, spaceed out for easier readability
 
     def run_game(self):
         self.welcome()
@@ -58,6 +56,8 @@ class Game():
 
         elif (self.player_two.player_score == 2):
             print(f'{self.player_two.name} wins the game!')
+
+   
     def compare_gestures(self):
         
         if self.player_one.chosen_gesture == 'rock':
@@ -162,16 +162,6 @@ class Game():
             elif self.player_two.chosen_gesture == 'lizard':
                 self.player_two.player_score += 1
                 print(f'lizard poisons spock {self.player_two.name} wins')
-        
-        
-
-        
-
-
-
-
-
-
             
 
     def game_select(self):
@@ -194,3 +184,4 @@ class Game():
         else:
             print("You have not selected a proper game mode")
             self.game_select()
+
