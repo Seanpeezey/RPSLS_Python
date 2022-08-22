@@ -10,9 +10,12 @@ class Game():
         pass
 
     def welcome(self):
-        print('Welcome to a wonderful game of chance!')
-        print('Each player picks a gesture and reveals it at the same time. The winner is the one who gets 2 wins. In a tie, the process is repeated until a winner is found.')
-        sleep(5)
+        print('Welcome to the Big Bang Theory version of the classic game of Rock, Paper, Scissors.')
+        sleep(1)
+        print('Lets go over some of the rules!')
+        sleep(1)
+        print('Each player picks a gesture at the beginning of the round. The first to 2 wins is the winner! In the case of a tie, the process is repeated until a distinct winner is found.')
+        sleep(1)
         print('You can choose between Rock, Paper, Scissors, Lizard or Spock')
         sleep(3)
         print('Rock crushes Scissors')
